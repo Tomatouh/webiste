@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoDam Solutions LLC</title>
+  <style>
+    /* --- Reset and Base Styles --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f6f9;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    header h1 { font-size: 1.8em; }
+    nav { display: flex; gap: 20px; }
+    nav a {
+      color: #fff; text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #f39c12; }
+
+    /* Dropdown for Language */
+    .language-select {
+      background: #34495e;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-left: 10px;
+    }
+    .language-select:hover {
+      background: #1abc9c;
+    }
+
+    .toggle-theme {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.4em;
+      cursor: pointer;
+      margin-left: 15px;
+      transition: color 0.3s;
+    }
+    .toggle-theme:hover { color: #f39c12; }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center/cover;
+      color: #000;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 5px solid #f1c40f; /* Added border */
+      border-radius: 12px;
+      margin: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    .hero h2 { font-size: 3em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; }
+
+    /* --- Main Container --- */
+    .container {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+      font-size: 2em;
+      transition: color 0.3s;
+    }
+
+    /* --- Services --- */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .service {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+      text-align: center;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .service h3 {
+      color: #2980b9;
+      margin-bottom: 10px;
+      font-size: 1.4em;
+      transition: color 0.3s;
+    }
+    .service p { font-size: 0.95em; }
+
+    /* Animated Icons */
+    .service-icon {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* --- About Section --- */
+    .about {
+      background-color: #e9eef3;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 40px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .about p {
+      font-size: 1.05em;
+      margin-bottom: 10px;
+    }
+
+    /* --- Contact Section --- */
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+    .contact p { margin-bottom: 10px; }
+
+    /* --- Footer --- */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      transition: background-color 0.3s;
+    }
+
+    /* --- Dark Mode --- */
+    body.dark { background-color: #121212; color: #e0e0e0; }
+    body.dark .section-title { color: #f1c40f; }
+    body.dark .service {
+      background-color: #1e1e1e;
+      color: #e0e0e0;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    }
+    body.dark header { background: #1f1f1f; }
+    body.dark footer { background: #1f1f1f; }
+    body.dark nav a { color: #e0e0e0; }
+    body.dark nav a:hover { color: #f1c40f; }
+    body.dark .about { background-color: #1a1a1a; }
+    body.dark .language-select {
+      background: #333;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>InfoDam Solutions LLC</h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <select class="language-select" id="language-select" title="Select Language">
+        <option value="index.html" selected>🌐 English</option>
+        <option value="indexRo.html">🇷🇴 Romanian</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Toggle Dark Mode">🌙</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Your IT Partner for Success</h2>
+    <p>Software Solutions & On-site Hardware Maintenance</p>
+  </section>
+
+  <div class="container">
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">💻</div>
+          <h3>Windows Installations & Activations</h3>
+          <p>Professional setup and activation of Windows operating systems for desktops and laptops, ensuring smooth and secure performance.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">📦</div>
+          <h3>Software Installations</h3>
+          <p>We install and configure all types of software applications tailored to your business or personal needs.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🛠️</div>
+          <h3>PC Building Assistance</h3>
+          <p>Expert advice and hands-on help to build custom PCs optimized for gaming, work, or personal use.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🔧</div>
+          <h3>PC & Laptop Repair</h3>
+          <p>Comprehensive repair services for desktops and laptops, including hardware replacements and software troubleshooting.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🎮</div>
+          <h3>Console Repair & Modding</h3>
+          <p>Repair and upgrade services for gaming consoles, including <strong>Hall Effect joystick upgrades</strong> for almost all modern consoles, and software modding for enhanced functionality and access to homebrew features.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🖥️</div>
+          <h3>Hardware Maintenance</h3>
+          <p>Regular maintenance including thermal compound replacement and internal dust cleaning to keep your systems running cool and efficient.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🌐</div>
+          <h3>Personalized Websites</h3>
+          <p>Custom website design and development to give your business or personal brand a professional online presence.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2 class="section-title">About Us</h2>
+      <p><strong>InfoDam Solutions LLC</strong> is your trusted partner for software innovation and cutting-edge hardware expertise. We blend years of technical know-how with a passion for delivering tailored solutions.</p>
+      <p>We don’t just fix technology – we optimize it for your needs.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <p>Email: <a href="mailto:info@infodam.com">contact@infodam.ro</a></p>
+      <p>Phone: +40 725 046 411</p>
+      <p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 InfoDam Solutions LLC. All rights reserved.
+  </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Dark Mode Toggle
+    const toggleThemeBtn = document.getElementById('toggle-theme');
+    const body = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark');
+      toggleThemeBtn.textContent = '☀️';
+    }
+    toggleThemeBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        toggleThemeBtn.textContent = '☀️';
+        localStorage.setItem('theme', 'dark');
+      } else {
+        toggleThemeBtn.textContent = '🌙';
+        localStorage.setItem('theme', 'light');
+      }
+    });
+
+    // Language Dropdown Redirect
+    const languageSelect = document.getElementById('language-select');
+    languageSelect.addEventListener('change', (e) => {
+      window.location.href = e.target.value;
+    });
+  </script>
+</body>
+</html>
