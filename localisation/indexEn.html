@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoDam Solutions</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <script src="../scripts.js" defer></script>
+</head>
+<body>
+<script>
+  fetch('/includes/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footerInclude').innerHTML = data;
+    });
+</script>
+  <header>
+    <h1><a href="indexEn.html" class="clean-link">InfoDam Solutions SRL</a></h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="indexEn.html">Home</a>
+        <select class="selector" id="selector" title="Services">
+          <option selected="selected">Services</option>
+          <option value="windowsEn.html">Windows Installations & Activations</option>
+          <option value="softwareEn.html">Software Installations</option>
+          <option value="buildEn.html">PC Build Assistance</option>
+          <option value="repairEn.html">PC & Laptop Repairs</option>
+          <option value="moddingEn.html">Console Repairs & Modding</option>
+          <option value="maintenanceEn.html">Hardware Maintenance</option>
+          <option value="webdevEn.html">Custom Websites</option>
+        </select>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+        <select class="language-select" id="language-select" title="Select Language">
+          <option selected>🌐 English</option>
+          <option value="../index.html" >🇷🇴 Romanian</option>
+        </select>
+        <button class="toggle-theme" id="toggle-theme" title="Toggle Dark Mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <h2 style="text-shadow: 2px 2px 3px white; font-size: 50px;">Your IT Partner for Success</h2>
+    <p style="text-shadow: 2px 2px 3px white; font-size:25px"><b>Software Solutions & On-Site Hardware Maintenance</b></p>
+  </section>
+
+  <div class="container">
+    <section id="content">
+    <section id="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">💻</div>
+          <h3><a href="windowsEn.html" class="clean-link">Windows Installations & Activations</a></h3>
+          <p>Professional installation and activation of Windows operating systems for desktops and laptops, ensuring secure and stable performance.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">📦</div>
+          <h3><a href="softwareEn.html" class="clean-link">Software Installations</a></h3>
+          <p>We install and configure software applications tailored to your personal or business needs.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🛠️</div>
+          <h3><a href="buildEn.html" class="clean-link">PC Build Assistance</a></h3>
+          <p>Consulting and hands-on help for building custom PCs for gaming, work, or personal use.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🔧</div>
+          <h3><a href="repairEn.html" class="clean-link">PC & Laptop Repairs</a></h3>
+          <p>Comprehensive repair services for desktops and laptops, including hardware replacement and software troubleshooting.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🎮</div>
+          <h3><a href="moddingEn.html" class="clean-link">Console Repairs & Modding</a></h3>
+          <p>Repairs and upgrades for gaming consoles, covering almost all modern systems.</p>
+        </div>
+        <div class="service">
+          <div class="service-icon">🖥️</div>
+          <h3><a href="maintenanceEn.html" class="clean-link">Hardware Maintenance</a></h3>
+          <p>Routine maintenance such as thermal paste replacement and dust cleaning for optimal performance.</p>
+        </div>
+        <div class="service center-service">
+          <div class="service-icon">🌐</div>
+          <h3><a href="webdevEn.html" class="clean-link">Custom Websites</a></h3>
+          <p>Creation and development of custom websites for your business or personal brand.</p>
+        </div>
+      </div>
+    </section>
+    </section>
+    <section id="about" class="about">
+      <h2 class="section-title">About Us</h2>
+      <p><strong>InfoDam Solutions SRL</strong> is your trusted partner for software innovation and advanced hardware expertise. We combine technical experience with a passion for customized solutions.</p>
+      <p>We don't just fix technology – we optimize it for you.</p>
+    </section>
+  </div>
+    <div class="container">
+      <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:contact@infodam.com" class="clean-link">contact@infodam.ro</a></p>
+        <p>Phone: +40 725 046 411</p>
+        <!--<p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>-->
+      </section>
+    </div>
+  <div id="contactInclude"></div>
+  <div id="footerInclude"></div>
+
+</body>
+</html>

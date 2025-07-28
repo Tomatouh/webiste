@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Service - Custom Static Websites</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../scripts.js" defer></script>
+    <style>
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+  <header>
+    <h1><a href="indexEn.html" class="clean-link">InfoDam Solutions SRL</a></h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="indexEn.html">Home</a>
+        <select class="selector" id="selector" title="Services">
+          <option selected="selected">Services</option>
+          <option value="  windowsEn.html">Windows Installations & Activations</option>
+          <option value="  softwareEn.html">Software Installations</option>
+          <option value="  buildEn.html">PC Build Assistance</option>
+          <option value="  repairEn.html">PC & Laptop Repairs</option>
+          <option value="  moddingEn.html">Console Repairs & Modding</option>
+          <option value="  maintenanceEn.html">Hardware Maintenance</option>
+          <option value="  webdevEn.html">Custom Websites</option>
+        </select>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Select language">
+        <option selected>🌐 English</option>
+        <option value="../Services/webdev.html" >🇷🇴 Romanian</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Toggle dark mode">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="content" class="content">
+      <h2 class="section-title">🌐 Custom Static Website</h2>
+      <div class="services">
+        <div class="service">
+          <div class="service-icon">🧩</div>
+          <h3><strong>What is a custom static site?</strong></h3>
+          <p>A static site is a website composed of HTML, CSS, and JavaScript pages created manually or using a static site generator. Without databases or complex backends, these sites are ultra-fast, easy to maintain, and ideal for professional presentations, portfolios, company pages, or events.</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📋</div>
+          <h3><strong>Consulting and Planning</strong></h3>
+          <p>Initial discussion to understand the visual identity and purpose of the site</p>
+          <p>Defining the structure (e.g., Home, About Us, Services, Contact, etc.)</p>
+          <p>Choosing a suitable color palette, fonts, and style</p>
+          <p>Option to include copy written by us or adapted from the client</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🖥️</div>
+          <h3><strong>Custom Design</strong></h3>
+          <p>Fully custom design from scratch (no generic templates)</p>
+          <p>Mobile and tablet compatibility (responsive design)</p>
+          <p>Clean, easy-to-navigate layout tailored to the target audience</p>
+          <p>Includes basic graphics and animations</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">💻</div>
+          <h3><strong>Technical Development</strong></h3>
+          <p>Clean HTML, CSS, and JavaScript code optimized for performance</p>
+          <p>Integration with basic interactive elements: buttons, galleries, animated sections</p>
+          <p>Functional contact form (email or external service-based)</p>
+          <p>Ready to host on any platform (e.g., Netlify, GitHub Pages, Cloudflare Pages, Hostinger, etc.)</p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📦</div>
+          <h3><strong>Delivery and Support</strong></h3>
+          <p>Site delivered as a .zip archive or deployed to a hosting service upon request</p>
+          <p>Option for future edits / optional maintenance package</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="container">
+    <section id="contact" class="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:contact@infodam.com" class="clean-link">contact@infodam.ro</a></p>
+      <p>Phone: +40 725 046 411</p>
+      <!--<p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>!-->
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 InfoDam Solutions SRL. All rights reserved.
+  </footer>
+  </body>
+</html>

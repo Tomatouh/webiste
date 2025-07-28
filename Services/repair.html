@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Servicii-Reparații PC și Laptop</title>
+      <link rel="stylesheet" href="../CSS/style.css" />
+      <script src="../scripts.js" defer></script>
+        <style>
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+    <body>
+
+ <header>
+    <h1><a href="../index.html" class="clean-link">InfoDam Solutions SRL</a></h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="../index.html">Acasă</a>
+        <select class="selector" id="selector" title="Servicii">
+          <option selected="selected">Servicii</option>
+          <option value="  windows.html">Instalări & Activări Windows </option>
+          <option value="  software.html">Instalări Software </option>
+          <option value="  build.html">Asistență Construire PC </option>
+          <option value="  repair.html">Reparații PC & Laptop </option>
+          <option value="  modding.html">Reparații & Modări Console </option>
+          <option value="  maintenance.html">Mentenanță Hardware </option>
+          <option value="  webdev.html">Site-uri Personalizate</option>
+        </select>
+        <a href="#about">Despre</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Selectează limba">
+        <option value="../localisation/repairEn.html">🌐 Engleză</option>
+        <option selected>🇷🇴 Română</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Comută modul întunecat">🌙</button>
+          </nav>
+    </div>
+  </header>
+    <div class="container">
+      <section id="content"class="content">
+        <h2 class="section-title">Reparații PC și Laptop</h2>
+        <div class="services">
+        <div class="service">
+          <div class="service-icon">🔍</div> <h3><strong>Diagnoză completă</strong></h3>
+          <ul>
+            <li>
+              Verificare hardware și software
+            </li>
+            <li>
+              Testare RAM, hard disk/SSD, temperaturi, ventilatoare
+            </li>
+            <li>Scanare malware și evaluare performanță sistem</li>
+            <li>Raport de constatări + soluție recomandată</li>
+          </ul>
+          </div>
+          <div class="service">
+          <div class="service-icon">🔧</div> <h3><strong>Reparații hardware</strong></h3>
+          <ul>
+            <li>Înlocuire tastaturi, ventilatoare, baterii, încărcătoare</li>
+            <li>Reparare/înlocuire ecrane crăpate sau defecte</li>
+            <li>Curățare completă de praf + înlocuire pastă termoconductoare</li>
+            <li>Înlocuire HDD/SSD, upgrade RAM, sursă, placă de bază, etc.</li>
+          </ul></div>
+          <div class="service">
+          <div class="service-icon">🚀</div> <h3><strong>Optimizare și upgrade</strong></h3>
+          <ul>
+            <li>Instalare SSD + clonare date de pe HDD</li>
+            <li>Optimizare pornire sistem, servicii și resurse</li>
+            <li>Instalare software esențial, backup automatizat</li>
+            <li>Upgrade sistem la o versiune mai modernă</li>
+          </ul>
+          </div>
+          <div class="service">
+          <div class="service-icon">💻</div> <h3><strong>Reparații software</strong></h3>
+          <ul>
+            <li>Reparare sistem de operare (Windows, Linux, MacOS)</li>
+            <li>Eliminare viruși, malware, reclame nedorite</li>
+            <li>Recuperare date (acolo unde este posibil)</li>
+          </ul>
+          </div>
+          <div class="service">
+          <div class="service-icon">📍</div> <h3><strong>Modalități de prestare</strong></h3>
+          <ul>
+            <strong>🏠 La domiciliu</strong>
+            <li>Intervenții rapide pentru probleme simple</li>
+            <strong>🧰 La atelierul InfoDam</strong>
+            <li>Reparații complexe, upgrade-uri hardware, recuperări de date</li>
+            <strong>💻 Remote (de la distanță)</strong>
+            <li>Pentru probleme software ce pot fi rezolvate prin conectare online securizată</li>
+          </ul>
+          </div>
+          </div>
+      </section>
+    </div>
+        <div class="container">
+          <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:contact@infodam.com" class="clean-link">contact@infodam.ro</a></p>
+        <p>Telefon: +40 725 046 411</p>
+        <!--<p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>!-->
+      </section>
+      </div>
+    <footer>
+    &copy; 2025 InfoDam Solutions SRL. Toate drepturile rezervate.
+  </footer>
+  </body>
+</html>

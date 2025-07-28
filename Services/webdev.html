@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Serviciu-Site-uri Personalizate</title>
+      <link rel="stylesheet" href="../CSS/style.css" />
+      <script src="../scripts.js" defer></script>
+        <style>
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+    <body>
+
+ <header>
+    <h1><a href="../index.html" class="clean-link">InfoDam Solutions SRL</a></h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="../index.html">Acasă</a>
+        <select class="selector" id="selector" title="Servicii">
+          <option selected="selected">Servicii</option>
+          <option value="  windows.html">Instalări & Activări Windows </option>
+          <option value="  software.html">Instalări Software </option>
+          <option value="  build.html">Asistență Construire PC </option>
+          <option value="  repair.html">Reparații PC & Laptop </option>
+          <option value="  modding.html">Reparații & Modări Console </option>
+          <option value="  maintenance.html">Mentenanță Hardware </option>
+          <option value="  webdev.html">Site-uri Personalizate</option>
+        </select>
+        <a href="#about">Despre</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Selectează limba">
+        <option value="../localisation/webdevEn.html">🌐 Engleză</option>
+        <option selected>🇷🇴 Română</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Comută modul întunecat">🌙</button>
+          </nav>
+    </div>
+  </header>
+    <div class="container">
+      <section id="content" class="content">
+      <h2 class="section-title">🌐 Site Static Personalizat</h2>
+        <div class="services">
+          <div class="service">
+            <div class="service-icon">🧩</div> <h3><strong>Ce este un site static custom?</strong></h3>
+          <p>Un site static este un website compus din pagini HTML, CSS și JavaScript create manual sau cu ajutorul unui generator static. Fără baze de date sau backend complicat, aceste site-uri sunt ultra-rapide, ușor de întreținut și ideale pentru prezentări profesionale, portofolii, pagini de companie sau evenimente.</p>
+          </div>
+                  <div class="service">
+            <div class="service-icon">📋</div> <h3><strong>Consultanță și planificare</strong></h3>
+          <p>Discuție inițială pentru a înțelege identitatea vizuală și scopul site-ului</p>
+          <p>Stabilirea structurii (ex: Home, Despre noi, Servicii, Contact etc.)</p>
+          <p>Alegerea unei palete de culori, fonturi și stiluri potrivite</p>
+          <p>Posibilitatea de a include text scris de noi sau adaptat de la client</p>
+        </div>
+        <div class="service">
+            <div class="service-icon">🖥️</div> <h3><strong>Design personalizat</strong></h3>
+        <p>Design complet de la zero (fără templatee generice)</p>
+        <p>Compatibilitate cu mobil și tabletă (responsive design)</p>
+        <p>Layout aerisit, ușor de navigat și adaptat tipului de public</p>
+        <p>Elemente grafice și animații simple incluse</p>
+          </div>
+        <div class="service">
+            <div class="service-icon">💻</div> <h3><strong>Dezvoltare tehnică</strong></h3>
+        <p>Cod HTML, CSS și JavaScript curat, optimizat pentru performanță</p>
+        <p>Integrare cu elemente interactive de bază: butoane, galerii, secțiuni animate</p>
+        <p>Formular de contact funcțional (cu trimitere pe e-mail sau folosind un serviciu extern)</p>
+        <p>Gata de găzduire pe orice platformă (ex: Netlify, GitHub Pages, Cloudflare Pages, Hostinger etc.)</p>
+        </div>
+        <div class="service">
+            <div class="service-icon">📦</div> <h3><strong>Livrare și suport</strong></h3>
+        <p>Site complet livrat într-o arhivă .zip sau urcat pe un serviciu de găzduire la cerere</p>
+        <p>Posibilitate de modificări ulterioare / pachet de mentenanță opțional</p>
+        </div>
+    </div>
+  </div>
+    </section>
+        <div class="container">
+          <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:contact@infodam.com" class="clean-link">contact@infodam.ro</a></p>
+        <p>Telefon: +40 725 046 411</p>
+        <!--<p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>!-->
+      </section>
+      </div>
+    <footer>
+    &copy; 2025 InfoDam Solutions SRL. Toate drepturile rezervate.
+  </footer>
+  </body>
+</html>

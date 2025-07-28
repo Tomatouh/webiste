@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <title>Serviciu-Mentenanță Hardware</title>
+      <link rel="stylesheet" href="../CSS/style.css" />
+      <script src="../scripts.js" defer></script>
+        <style>
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+    <body>
+
+ <header>
+    <h1><a href="../index.html" class="clean-link">InfoDam Solutions SRL</a></h1>
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="../index.html">Acasă</a>
+        <select class="selector" id="selector" title="Servicii">
+          <option selected="selected">Servicii</option>
+          <option value="  windows.html">Instalări & Activări Windows </option>
+          <option value="  software.html">Instalări Software </option>
+          <option value="  build.html">Asistență Construire PC </option>
+          <option value="  repair.html">Reparații PC & Laptop </option>
+          <option value="  modding.html">Reparații & Modări Console </option>
+          <option value="  maintenance.html">Mentenanță Hardware </option>
+          <option value="  webdev.html">Site-uri Personalizate</option>
+        </select>
+        <a href="#about">Despre</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Selectează limba">
+        <option value="../localisation/maintenanceEn.html">🌐 Engleză</option>
+        <option selected>🇷🇴 Română</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Comută modul întunecat">🌙</button>
+          </nav>
+    </div>
+  </header>
+    <div class="container">
+      <section id="content"class="content">
+        <h2 class="section-title">🧰 Mentenanță Hardware</h2>
+        <div class="services">
+        <div class="service">
+          <div class="service-icon">🔍</div> <h3><strong>Ce include mentenanța hardware?</strong></h3>
+          <ul>
+          <li><strong>🧽 Curățare completă</strong></li>
+          <li>Demontare controlată a sistemului (desktop/laptop)</li>
+          <li>Îndepărtarea prafului din carcasă, ventilatoare, radiator, sursă</li>
+          <li>Curățare porturi (USB, HDMI, jack audio) și componente expuse</li>
+          <li>Aspirare fină + aer comprimat profesional</li>
+          </ul>
+        </div>
+        <div class="service">
+        <div class="service-icon">❄️</div> <h3><strong> Îmbunătățirea sistemului de răcire</strong></h3>
+      <ul>
+        <li>Schimbare pastă termoconductoare CPU și GPU</li>
+        <li>Verificare/aliniere radiatoare, suporți, termopaduri</li>
+        <li>Testare temperaturi idle/load înainte și după intervenție</li>
+        <li>Recomandare/upgradare ventilatoare (dacă este necesar)</li>
+      </ul>
+      </div>
+              <div class="service">
+        <div class="service-icon">🔌</div> <h3><strong> Verificare componente</strong></h3>
+      <ul>
+        <li>Testare RAM, SSD/HDD</li>
+        <li>Tensiuni sursă, stabilitate alimentare</li>
+        <li>Verificare contacte oxidate, cabluri slăbite, mufele plăcii de bază</li>
+        <li>Detectare potențiale probleme hardware înainte ca acestea să devină critice</li>
+      </ul>
+      </div>
+              <div class="service">
+        <div class="service-icon">🖥️</div> <h3><strong> Revizie generală sistem</strong></h3>
+      <ul>
+        <li>Control integritate fizică placă de bază, sloturi PCIe, RAM</li>
+        <li>Ajustare cabluri pentru un airflow mai bun</li>
+        <li>Curățare filtre de praf și ajustare ventilatoare</li>
+        <li>Recomandări de upgrade dacă este cazul</li>
+      </ul>
+      </div>
+        </div>
+      </div>
+      </section>
+
+      
+    </div>
+        <div class="container">
+          <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:contact@infodam.com" class="clean-link">contact@infodam.ro</a></p>
+        <p>Telefon: +40 725 046 411</p>
+        <!--<p>Address: Strada Stefan Greceanu nr.9 ap. 11</p>!-->
+      </section>
+      </div>
+    <footer>
+    &copy; 2025 InfoDam Solutions SRL. Toate drepturile rezervate.
+  </footer>
+  </body>
+</html>
