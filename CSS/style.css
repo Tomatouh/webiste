@@ -92,7 +92,6 @@ nav, .selector, .language-select {
 
     /* --- Hero Section --- */
     .hero {
-      background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center/cover;
       color: #000;
       height: 400px;
       display: flex;
@@ -222,6 +221,7 @@ nav, .selector, .language-select {
 }
 .content p {
   margin-bottom: 15px;
+  text-align: center;
 }
 
     /* --- About Section --- */

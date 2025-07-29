@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoDam Solutions</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <script src="../scripts.js" defer></script>
+</head>
+<body>
+<script>
+        fetch('/includes/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footerInclude').innerHTML = data;
+    });
+          fetch('/includes/contact.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contactInclude').innerHTML = data;
+    }); 
+</script>
+  <header>
+    <h1><a href="indexEn.html" class="clean-link">InfoDam Solutions SRL</a></h1>    
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="indexEn.html">Home</a>
+        <select class="selector" id="selector" title="Services">
+          <option hidden selected="selected">Services</option>
+          <option value="windowsEn.html">Windows Installations & Activations</option>
+          <option value="softwareEn.html">Software Installations</option>
+          <option value="buildEn.html">PC Build Assistance</option>
+          <option value="repairEn.html">PC & Laptop Repairs</option>
+          <option value="moddingEn.html">Console Repairs & Modding</option>
+          <option value="maintenanceEn.html">Hardware Maintenance</option>
+          <option value="webdevEn.html">Custom Websites</option>
+        </select>
+        <a href="">About</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Select language">
+        <option selected>🌐 English</option>
+        <option value="../about.html">🇷🇴 Romanian</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Toggle dark mode">🌙</button>
+          </nav>
+    </div>
+  </header>
+    <section class="hero" style="margin:0% 20% 0% 20%; background: url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;">
+    <h2 style="text-shadow: 2px 2px 3px white; font-size: 50px;">Your IT Partner for Success</h2>
+    <p style="text-shadow: 2px 2px 3px white; font-size:25px"><b>Software solutions & On-site hardware maintenance</b></p>
+  </section>
+   <div class="content"><h2 class="section-title">About Us</h2>
+<p style="margin: 0% 20% 0% 20%;">
+  <strong>InfoDam Solutions SRL</strong> is your trusted partner in the technology field, 
+  offering software innovation and advanced hardware expertise. With a dedicated and well-trained team, 
+  we combine solid technical experience with a genuine passion for developing customized solutions 
+  tailored to each client's needs. <strong>We provide a wide range of services optimized for your needs</strong>, 
+  covering both technical support and the development of intelligent solutions. 
+  <em>We don’t just repair technology – we optimize it for you</em>, ensuring long-term performance, efficiency, and reliability.
+</p>
+
+</div>
+
+  <div id="contactInclude"></div>
+  <div id="footerInclude"></div>
+</body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InfoDam Solutions</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+<script>
+        fetch('/includes/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footerInclude').innerHTML = data;
+    });
+      fetch('/includes/contact.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('contactInclude').innerHTML = data;
+    }); 
+</script>
+  <header>
+    <h1><a href="index.html" class="clean-link">InfoDam Solutions SRL</a></h1>    
+    <div style="display: flex; align-items: center;">
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav id="nav">
+        <a href="index.html">Acasă</a>
+        <select class="selector" id="selector" title="Servicii">
+          <option hidden selected="selected">Servicii</option>
+          <option value="Services/windows.html">Instalări & Activări Windows </option>
+          <option value="Services/software.html">Instalări Software </option>
+          <option value="Services/build.html">Asistență Construire PC </option>
+          <option value="Services/repair.html">Reparații PC & Laptop </option>
+          <option value="Services/modding.html">Reparații & Modări Console </option>
+          <option value="Services/maintenance.html">Mentenanță Hardware </option>
+          <option value="Services/webdev.html">Site-uri Personalizate</option>
+        </select>
+        <a href="">Despre</a>
+        <a href="#contact">Contact</a>
+
+      <select class="language-select" id="language-select" title="Selectează limba">
+        <option value="localisation/aboutEn.html">🌐 Engleză</option>
+        <option selected>🇷🇴 Română</option>
+      </select>
+      <button class="toggle-theme" id="toggle-theme" title="Comută modul întunecat">🌙</button>
+          </nav>
+    </div>
+  </header>
+    <section class="hero" style="margin:0% 20% 0% 20%; background: url('https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;">
+    <h2 style="text-shadow: 2px 2px 3px white; font-size: 50px;">Partenerul tău IT pentru succes</h2>
+    <p style="text-shadow: 2px 2px 3px white; font-size:25px"><b>Soluții software & Mentenanță hardware la sediu</b></p>
+  </section>
+   <div class="content"><h2 class="section-title">Despre Noi</h2>
+<p style="margin: 0% 20% 0% 20%;">
+  <strong>InfoDam Solutions SRL</strong> este partenerul tău de încredere în domeniul tehnologiei, 
+  oferind inovație software și competență hardware avansată. Cu o echipă dedicată și bine pregătită, 
+  combinăm experiența tehnică solidă cu o pasiune autentică pentru dezvoltarea de soluții personalizate, 
+  adaptate nevoilor fiecărui client. <strong>Oferim o gamă largă de servicii optimizate pentru nevoile tale</strong>, 
+  acoperind atât suportul tehnic, cât și dezvoltarea de soluții inteligente. 
+  <em>Noi nu doar reparam tehnologia – o optimizăm pentru tine</em>, asigurând performanță, eficiență și fiabilitate 
+  pe termen lung.
+</p>
+
+</div>
+
+  <div id="contactInclude"></div>
+  <div id="footerInclude"></div>
+</body></html>
