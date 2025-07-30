@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InfoDam Solutions</title>
   <link rel="stylesheet" href="CSS/style.css" />
-  <script src="scripts.js" defer></script>
+   <script src="scripts.js" defer></script>
 </head>
 <body>
 <script>
@@ -14,11 +14,6 @@
     .then(data => {
       document.getElementById('contactInclude').innerHTML = data;
     }); 
-        fetch('/includes/footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footerInclude').innerHTML = data;
-    });
 </script>
   <header>
     <h1><a href="index.html" class="clean-link">InfoDam Solutions SRL</a></h1>    
@@ -28,7 +23,7 @@
         <div></div>
         <div></div>
       </div>
-      <nav id="nav">
+      <nav id="nav" class="nav">
         <a href="index.html">Acasă</a>
         <select class="selector" id="selector" title="Servicii">
           <option hidden selected="selected">Servicii</option>
@@ -48,15 +43,18 @@
         <option selected>🇷🇴 Română</option>
       </select>
       <button class="toggle-theme" id="toggle-theme" title="Comută modul întunecat">🌙</button>
-          </nav>
+    </nav>
+    </header>
     </div>
-  </header>
-<section class="hero" style="margin:0% 20% 0% 20%; background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center/cover;">
-    <h2 style="text-shadow: 2px 2px 3px white; font-size: 50px;">Partenerul tău IT pentru succes</h2>
-    <p style="text-shadow: 2px 2px 3px white; font-size:25px"><b>Soluții software & Mentenanță hardware la sediu</b></p>
+  
+
+<section class="hero" style=" background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center/cover;">
+    <h2><strong>Partenerul tău IT pentru succes</strong></h2>
+    <p><b><strong>Soluții software & Mentenanță hardware la sediu</strong></b></p>
   </section>
 
   <div class="container">
+    <div class="content">
     <section id="content">
     <section id="services">
       <h2 class="section-title">Serviciile Noastre</h2>
@@ -91,7 +89,7 @@
           <h3>Mentenanță Hardware</h3>
           <p>Mentenanță regulată precum înlocuirea pastei termoconductoare și curățarea de praf pentru performanță optimă.</p>
         </a>
-        <a href="Services/webdev.html" class="service clean-link center-service">
+        <a href="Services/webdev.html" class="service clean-link ">
           <div class="service-icon">🌐</div>
           <h3>Site-uri Personalizate</h3>
           <p>Creare și dezvoltare de site-uri personalizate pentru afacerea ta sau brandul tău personal.</p>
@@ -99,11 +97,9 @@
       </div>
     </section>
     </section>
+    </div>
+  <div id="contactInclude"></div>
 
 
   </div>
-
-<div id="contactInclude"></div>
-
-</body>
 </html>
