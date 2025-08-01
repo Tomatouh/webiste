@@ -1,13 +1,9 @@
 const menuToggle = document.getElementById('menu-toggle');
-const nav = document.getElementById('nav');
+const nav = document.getElementById('navbar');
 menuToggle.addEventListener('click', () => {
   nav.classList.toggle('responsive');
 });
 
-function hamburger() {
-  var x = document.getElementById("nav");
-  x.classList.toggle("responsive");
-} 
     const toggleThemeBtn = document.getElementById('toggle-theme');
     const body = document.body;
     if (localStorage.getItem('theme') === 'dark') {
