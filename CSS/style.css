@@ -377,6 +377,9 @@ body.dark .language-select {
   color: #e0e0e0;
   box-shadow: 0 0.125em 0.5em rgba(44,62,80,0.18);
 }
+body.dark .navbar.responsive {
+  background: #1f1f1f;
+}
 body.dark .selector:hover,
 body.dark .language-select:hover {
   background: #f1c40f;
